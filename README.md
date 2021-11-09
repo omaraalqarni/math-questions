@@ -1,7 +1,6 @@
 # math-questions
-### the project's purpose is for users to enter different numbers and and the select the operaton(addition, subtraction, multiplication, division). 
-### Then, They will be redirected to another page where they see the entered equation and **three options** where, obviously, two of them are wrong:). After that, 
-### the user gets alerted to wether there answer is correct or wrong.
+the project's purpose is for users to enter different numbers and and the select the operaton(addition, subtraction, multiplication, division). 
+Then, They will be redirected to another page where they see the entered equation and **three options** where, obviously, two of them are wrong:). After that, the user gets alerted to wether there answer is correct or wrong.
 
 
 # Technical Info:
