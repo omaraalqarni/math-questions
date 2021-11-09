@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Time</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Quiz Time!</h1>
+    <h2 ><%= data.fullEquation %></h2>
+    <form action="/quizPage" method="POST">
+      <button id="1" onclick="checkAnswer(this)" value="<%= data.answers[0]%>"><%= data.answers[0]%></button>
+      <button id="2" onclick="checkAnswer(this)" value="<%= data.answers[1]%>"><%= data.answers[1]%></button>
+      <button id="3" onclick="checkAnswer(this)" value="<%= data.answers[2]%>"><%= data.answers[2]%></button>
+    </form>
+
+    <script>
+       function checkAnswer(elem) {
+        var correctAnswer = "<%= data.result %>";
+        console.log(elem.value);
+        if (correctAnswer == elem.value ) {
+            alert("Correct!")
+        }
+        else(
+            alert("Try again!")
+        )
+       }
+         
+    </script>
+
+  </body>
+</html>
